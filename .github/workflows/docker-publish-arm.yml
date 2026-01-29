@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: 21momo2/openwebui
+  IMAGE_NAME: 21momo2/openwebui2
 
 jobs:
   build-and-push:
