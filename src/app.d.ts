@@ -1,0 +1,20 @@
+// See https://kit.svelte.dev/docs/types#app
+// for information about these interfaces
+declare global {
+	namespace App {
+		// interface Error {}
+		// interface Locals {}
+		// interface PageData {}
+		// interface Platform {}
+	}
+}
+
+declare module '@joplin/turndown-plugin-gfm' {
+	import TurndownService from 'turndown';
+	export function gfm(turndownService: TurndownService): void;
+	export function tables(turndownService: TurndownService): void;
+	export function strikethrough(turndownService: TurndownService): void;
+	export function taskListItems(turndownService: TurndownService): void;
+}
+
+export {};
